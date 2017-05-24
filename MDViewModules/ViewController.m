@@ -21,7 +21,7 @@
     self.tableView = [[UITableView  alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.tableView];
 }
 
@@ -41,7 +41,7 @@
     }
     contentCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     if (indexPath.row == 0) {
-        contentCell.textLabel.text = @"基于UIView的模块化实例";
+        contentCell.textLabel.text = @"基于UIView的模块化组件";
     }
     return contentCell;
 }
