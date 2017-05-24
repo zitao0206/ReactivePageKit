@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-MDViewModulesTests.xcscheme</key>
+		<key>Pods-MDViewModules.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>340B4959B9AFCD72907FB23ED85BC1D4</key>
+		<key>9EE198EE4D24092295086B1596EB8C03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59D874D8EC9EA774DF6D26916CE452D8</key>
+		<key>A04214E79263BE33AFA985B99B12F0A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

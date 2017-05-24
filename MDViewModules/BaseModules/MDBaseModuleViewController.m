@@ -10,7 +10,6 @@
 #import "MDBaseModuleView.h"
 #import "UIView+ResizeFrame.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "NSArray+functional.h"
 
 @interface MDBaseModuleViewController ()<UIScrollViewDelegate>
 //views
