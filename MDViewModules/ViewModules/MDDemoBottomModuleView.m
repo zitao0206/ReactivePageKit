@@ -14,7 +14,7 @@
 {
     if (self = [super init]) {
         self.backgroundColor = [UIColor lightGrayColor];
-        [self performSelector:@selector(test) withObject:self afterDelay:5.f];
+        [self performSelector:@selector(test) withObject:self afterDelay:3.f];
     }
     return self;
 }

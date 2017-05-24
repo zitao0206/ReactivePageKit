@@ -48,7 +48,7 @@
 - (void)loadContentSubviews
 {
     self.scrollView = [UIScrollView new];
-    self.scrollView.backgroundColor = [UIColor clearColor];
+    self.scrollView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     self.scrollView.bounces = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
@@ -56,6 +56,7 @@
     self.scrollView.delegate = self;
    
     self.contentView = [UIView new];
+    self.contentView.backgroundColor = [UIColor whiteColor];
     [self.scrollView addSubview:self.contentView];
     [self loadAllSubviews];
     [self loadAllSubviewsData];
