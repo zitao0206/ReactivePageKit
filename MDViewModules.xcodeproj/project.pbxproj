@@ -16,14 +16,14 @@
 		D853DBDD1ED5766B007207EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D853DBDB1ED5766B007207EE /* LaunchScreen.storyboard */; };
 		D853DBE81ED5766B007207EE /* MDViewModulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DBE71ED5766B007207EE /* MDViewModulesTests.m */; };
 		D853DBF31ED5766B007207EE /* MDViewModulesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DBF21ED5766B007207EE /* MDViewModulesUITests.m */; };
-		D853DC101ED5792C007207EE /* MDBaseModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC021ED5792C007207EE /* MDBaseModuleModel.m */; };
-		D853DC111ED5792C007207EE /* MDBaseModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC041ED5792C007207EE /* MDBaseModuleView.m */; };
-		D853DC121ED5792C007207EE /* MDBaseModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC061ED5792C007207EE /* MDBaseModuleViewController.m */; };
-		D853DC131ED5792C007207EE /* MDDemoBottomModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC091ED5792C007207EE /* MDDemoBottomModuleView.m */; };
-		D853DC141ED5792C007207EE /* MDDemoHeadModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC0B1ED5792C007207EE /* MDDemoHeadModuleView.m */; };
-		D853DC151ED5792C007207EE /* MDDemoMiddleModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC0D1ED5792C007207EE /* MDDemoMiddleModuleView.m */; };
-		D853DC161ED5792C007207EE /* MDDemoModuleViewcomtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC0F1ED5792C007207EE /* MDDemoModuleViewcomtroller.m */; };
 		D853DC191ED57A1D007207EE /* UIView+ResizeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC181ED57A1D007207EE /* UIView+ResizeFrame.m */; };
+		D853DC2A1ED57C89007207EE /* MDBaseModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC1C1ED57C89007207EE /* MDBaseModuleModel.m */; };
+		D853DC2B1ED57C89007207EE /* MDBaseModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC1E1ED57C89007207EE /* MDBaseModuleView.m */; };
+		D853DC2C1ED57C89007207EE /* MDBaseModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC201ED57C89007207EE /* MDBaseModuleViewController.m */; };
+		D853DC2D1ED57C89007207EE /* MDDemoBottomModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC231ED57C89007207EE /* MDDemoBottomModuleView.m */; };
+		D853DC2E1ED57C89007207EE /* MDDemoHeadModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC251ED57C89007207EE /* MDDemoHeadModuleView.m */; };
+		D853DC2F1ED57C89007207EE /* MDDemoMiddleModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC271ED57C89007207EE /* MDDemoMiddleModuleView.m */; };
+		D853DC301ED57C89007207EE /* MDDemoModuleViewcomtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = D853DC291ED57C89007207EE /* MDDemoModuleViewcomtroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,23 +63,23 @@
 		D853DBEE1ED5766B007207EE /* MDViewModulesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDViewModulesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D853DBF21ED5766B007207EE /* MDViewModulesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewModulesUITests.m; sourceTree = "<group>"; };
 		D853DBF41ED5766B007207EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D853DC011ED5792C007207EE /* MDBaseModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleModel.h; sourceTree = "<group>"; };
-		D853DC021ED5792C007207EE /* MDBaseModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleModel.m; sourceTree = "<group>"; };
-		D853DC031ED5792C007207EE /* MDBaseModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleView.h; sourceTree = "<group>"; };
-		D853DC041ED5792C007207EE /* MDBaseModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleView.m; sourceTree = "<group>"; };
-		D853DC051ED5792C007207EE /* MDBaseModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleViewController.h; sourceTree = "<group>"; };
-		D853DC061ED5792C007207EE /* MDBaseModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleViewController.m; sourceTree = "<group>"; };
-		D853DC071ED5792C007207EE /* MDBaseViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseViewDelegate.h; sourceTree = "<group>"; };
-		D853DC081ED5792C007207EE /* MDDemoBottomModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoBottomModuleView.h; sourceTree = "<group>"; };
-		D853DC091ED5792C007207EE /* MDDemoBottomModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoBottomModuleView.m; sourceTree = "<group>"; };
-		D853DC0A1ED5792C007207EE /* MDDemoHeadModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoHeadModuleView.h; sourceTree = "<group>"; };
-		D853DC0B1ED5792C007207EE /* MDDemoHeadModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoHeadModuleView.m; sourceTree = "<group>"; };
-		D853DC0C1ED5792C007207EE /* MDDemoMiddleModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoMiddleModuleView.h; sourceTree = "<group>"; };
-		D853DC0D1ED5792C007207EE /* MDDemoMiddleModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoMiddleModuleView.m; sourceTree = "<group>"; };
-		D853DC0E1ED5792C007207EE /* MDDemoModuleViewcomtroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoModuleViewcomtroller.h; sourceTree = "<group>"; };
-		D853DC0F1ED5792C007207EE /* MDDemoModuleViewcomtroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoModuleViewcomtroller.m; sourceTree = "<group>"; };
 		D853DC171ED57A1D007207EE /* UIView+ResizeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ResizeFrame.h"; sourceTree = "<group>"; };
 		D853DC181ED57A1D007207EE /* UIView+ResizeFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ResizeFrame.m"; sourceTree = "<group>"; };
+		D853DC1B1ED57C89007207EE /* MDBaseModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleModel.h; sourceTree = "<group>"; };
+		D853DC1C1ED57C89007207EE /* MDBaseModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleModel.m; sourceTree = "<group>"; };
+		D853DC1D1ED57C89007207EE /* MDBaseModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleView.h; sourceTree = "<group>"; };
+		D853DC1E1ED57C89007207EE /* MDBaseModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleView.m; sourceTree = "<group>"; };
+		D853DC1F1ED57C89007207EE /* MDBaseModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseModuleViewController.h; sourceTree = "<group>"; };
+		D853DC201ED57C89007207EE /* MDBaseModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseModuleViewController.m; sourceTree = "<group>"; };
+		D853DC211ED57C89007207EE /* MDBaseViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseViewDelegate.h; sourceTree = "<group>"; };
+		D853DC221ED57C89007207EE /* MDDemoBottomModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoBottomModuleView.h; sourceTree = "<group>"; };
+		D853DC231ED57C89007207EE /* MDDemoBottomModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoBottomModuleView.m; sourceTree = "<group>"; };
+		D853DC241ED57C89007207EE /* MDDemoHeadModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoHeadModuleView.h; sourceTree = "<group>"; };
+		D853DC251ED57C89007207EE /* MDDemoHeadModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoHeadModuleView.m; sourceTree = "<group>"; };
+		D853DC261ED57C89007207EE /* MDDemoMiddleModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoMiddleModuleView.h; sourceTree = "<group>"; };
+		D853DC271ED57C89007207EE /* MDDemoMiddleModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoMiddleModuleView.m; sourceTree = "<group>"; };
+		D853DC281ED57C89007207EE /* MDDemoModuleViewcomtroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoModuleViewcomtroller.h; sourceTree = "<group>"; };
+		D853DC291ED57C89007207EE /* MDDemoModuleViewcomtroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoModuleViewcomtroller.m; sourceTree = "<group>"; };
 		DF4329649DB2B6E966BEE437 /* Pods-MDViewModules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDViewModules.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDViewModules/Pods-MDViewModules.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,9 +152,9 @@
 		D853DBCC1ED5766B007207EE /* MDViewModules */ = {
 			isa = PBXGroup;
 			children = (
+				D853DC1A1ED57C89007207EE /* ViewModules */,
 				D853DC171ED57A1D007207EE /* UIView+ResizeFrame.h */,
 				D853DC181ED57A1D007207EE /* UIView+ResizeFrame.m */,
-				D853DC001ED5792C007207EE /* BaseModules */,
 				D853DBD01ED5766B007207EE /* AppDelegate.h */,
 				D853DBD11ED5766B007207EE /* AppDelegate.m */,
 				D853DBD31ED5766B007207EE /* ViewController.h */,
@@ -194,26 +194,26 @@
 			path = MDViewModulesUITests;
 			sourceTree = "<group>";
 		};
-		D853DC001ED5792C007207EE /* BaseModules */ = {
+		D853DC1A1ED57C89007207EE /* ViewModules */ = {
 			isa = PBXGroup;
 			children = (
-				D853DC011ED5792C007207EE /* MDBaseModuleModel.h */,
-				D853DC021ED5792C007207EE /* MDBaseModuleModel.m */,
-				D853DC031ED5792C007207EE /* MDBaseModuleView.h */,
-				D853DC041ED5792C007207EE /* MDBaseModuleView.m */,
-				D853DC051ED5792C007207EE /* MDBaseModuleViewController.h */,
-				D853DC061ED5792C007207EE /* MDBaseModuleViewController.m */,
-				D853DC071ED5792C007207EE /* MDBaseViewDelegate.h */,
-				D853DC081ED5792C007207EE /* MDDemoBottomModuleView.h */,
-				D853DC091ED5792C007207EE /* MDDemoBottomModuleView.m */,
-				D853DC0A1ED5792C007207EE /* MDDemoHeadModuleView.h */,
-				D853DC0B1ED5792C007207EE /* MDDemoHeadModuleView.m */,
-				D853DC0C1ED5792C007207EE /* MDDemoMiddleModuleView.h */,
-				D853DC0D1ED5792C007207EE /* MDDemoMiddleModuleView.m */,
-				D853DC0E1ED5792C007207EE /* MDDemoModuleViewcomtroller.h */,
-				D853DC0F1ED5792C007207EE /* MDDemoModuleViewcomtroller.m */,
+				D853DC1B1ED57C89007207EE /* MDBaseModuleModel.h */,
+				D853DC1C1ED57C89007207EE /* MDBaseModuleModel.m */,
+				D853DC1D1ED57C89007207EE /* MDBaseModuleView.h */,
+				D853DC1E1ED57C89007207EE /* MDBaseModuleView.m */,
+				D853DC1F1ED57C89007207EE /* MDBaseModuleViewController.h */,
+				D853DC201ED57C89007207EE /* MDBaseModuleViewController.m */,
+				D853DC211ED57C89007207EE /* MDBaseViewDelegate.h */,
+				D853DC221ED57C89007207EE /* MDDemoBottomModuleView.h */,
+				D853DC231ED57C89007207EE /* MDDemoBottomModuleView.m */,
+				D853DC241ED57C89007207EE /* MDDemoHeadModuleView.h */,
+				D853DC251ED57C89007207EE /* MDDemoHeadModuleView.m */,
+				D853DC261ED57C89007207EE /* MDDemoMiddleModuleView.h */,
+				D853DC271ED57C89007207EE /* MDDemoMiddleModuleView.m */,
+				D853DC281ED57C89007207EE /* MDDemoModuleViewcomtroller.h */,
+				D853DC291ED57C89007207EE /* MDDemoModuleViewcomtroller.m */,
 			);
-			path = BaseModules;
+			path = ViewModules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,17 +403,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D853DC121ED5792C007207EE /* MDBaseModuleViewController.m in Sources */,
-				D853DC111ED5792C007207EE /* MDBaseModuleView.m in Sources */,
-				D853DC141ED5792C007207EE /* MDDemoHeadModuleView.m in Sources */,
+				D853DC2A1ED57C89007207EE /* MDBaseModuleModel.m in Sources */,
+				D853DC2F1ED57C89007207EE /* MDDemoMiddleModuleView.m in Sources */,
 				D853DC191ED57A1D007207EE /* UIView+ResizeFrame.m in Sources */,
-				D853DC161ED5792C007207EE /* MDDemoModuleViewcomtroller.m in Sources */,
+				D853DC2B1ED57C89007207EE /* MDBaseModuleView.m in Sources */,
+				D853DC2C1ED57C89007207EE /* MDBaseModuleViewController.m in Sources */,
+				D853DC301ED57C89007207EE /* MDDemoModuleViewcomtroller.m in Sources */,
 				D853DBD51ED5766B007207EE /* ViewController.m in Sources */,
-				D853DC101ED5792C007207EE /* MDBaseModuleModel.m in Sources */,
-				D853DC151ED5792C007207EE /* MDDemoMiddleModuleView.m in Sources */,
 				D853DBD21ED5766B007207EE /* AppDelegate.m in Sources */,
-				D853DC131ED5792C007207EE /* MDDemoBottomModuleView.m in Sources */,
 				D853DBCF1ED5766B007207EE /* main.m in Sources */,
+				D853DC2E1ED57C89007207EE /* MDDemoHeadModuleView.m in Sources */,
+				D853DC2D1ED57C89007207EE /* MDDemoBottomModuleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
