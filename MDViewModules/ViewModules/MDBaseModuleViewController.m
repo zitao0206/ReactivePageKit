@@ -74,7 +74,7 @@
     return NO;
 }
 
-- (NSArray *)loadDynamicModules
+- (NSArray *)dynamicModules
 {
     return @[];
 }
@@ -97,7 +97,7 @@
 - (void)loadAllSubviews
 {
     if ([self isSupportDynamicConfigration]) {
-        for (NSString *obj in [self loadDynamicModules]) {
+        for (NSString *obj in [self dynamicModules]) {
             Class cls = NSClassFromString([self loadDynamicModuleWith:obj]);
             if (cls != nil) {
                 [self.contentView addSubview:[cls new]];

@@ -41,7 +41,7 @@
     return YES;
 }
 
-- (NSArray *)loadDynamicModules
+- (NSArray *)dynamicModules
 {//来自后端的动态数据
     return @[@"head",
              @"middle",
