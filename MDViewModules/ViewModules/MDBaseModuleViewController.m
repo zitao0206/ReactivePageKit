@@ -68,10 +68,45 @@
     return @[];
 }
 
+//支持模块后台动态可配
+- (BOOL)isSupportDynamicConfigration
+{
+    return NO;
+}
+
+- (NSArray *)loadDynamicModules
+{
+    return @[];
+}
+
+- (NSDictionary *)allDynamicModules
+{
+    return @{};
+}
+
+- (NSString *)loadDynamicModuleWith:(NSString *)moduleIdentify
+{
+    static dispatch_once_t onceToken;
+    static NSDictionary * dic = nil;
+    dispatch_once(&onceToken, ^{
+        dic = [self allDynamicModules];
+    });
+    return dic[moduleIdentify];
+}
+
 - (void)loadAllSubviews
 {
-    for (NSString *obj in [self loadContentViews]) {
-        [self.contentView addSubview:[NSClassFromString(obj) new]];
+    if ([self isSupportDynamicConfigration]) {
+        for (NSString *obj in [self loadDynamicModules]) {
+            Class cls = NSClassFromString([self loadDynamicModuleWith:obj]);
+            if (cls != nil) {
+                [self.contentView addSubview:[cls new]];
+            }
+        }
+    } else {
+        for (NSString *obj in [self loadContentViews]) {
+            [self.contentView addSubview:[NSClassFromString(obj) new]];
+        }
     }
 }
 

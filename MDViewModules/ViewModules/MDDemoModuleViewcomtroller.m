@@ -34,6 +34,32 @@
              ];
 }
 
+//支持模块后台可配
+
+- (BOOL)isSupportDynamicConfigration
+{
+    return YES;
+}
+
+- (NSArray *)loadDynamicModules
+{//来自后端的动态数据
+    return @[@"head",
+             @"middle",
+             @"bottom",
+             @"head",
+             ];
+}
+
+- (NSDictionary *)allDynamicModules
+{
+    return @{
+             @"head":@"MDDemoHeadModuleView",
+             @"middle":@"MDDemoMiddleModuleView",
+             @"bottom":@"MDDemoBottomModuleView"
+             };
+}
+
+
 - (CGFloat)contentViewWidth
 {
     return [self screenWidth] - 30;
