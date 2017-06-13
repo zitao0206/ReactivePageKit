@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface MDBaseModuleViewController : UIViewController
+
 @property (nonatomic, strong) UIView *contentView;
+
+//刷次所有模块
+- (void)refreshContentSubviews;
+//刷次某一模块
+- (void)refreshContentSubviewWithIndex:(NSUInteger)idx;
 
 @end

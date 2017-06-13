@@ -68,6 +68,26 @@
     return @[];
 }
 
+- (void)refreshContentSubviews
+{
+    [self loadAllSubviewsData];
+    [self layoutAllSubviews];
+}
+
+- (void)refreshContentSubviewWithIndex:(NSUInteger)index
+{
+    if (index >= self.contentView.subviews.count) return;
+    __kindof MDBaseModuleView * obj = [self.contentView.subviews objectAtIndex:index];
+    if ([obj conformsToProtocol:@protocol(MDBaseViewDelegate)]) {
+        [obj loadViewWithData:self.model];
+        [obj layoutViewWithWidth:[self contentViewWidth]];
+        obj.left = ([self screenWidth] - [self contentViewWidth])/2;
+        if (index > 0) {
+            [self relayoutSubViewsWithIndex:index-1];
+        }
+    }
+}
+
 //支持模块后台动态可配
 - (BOOL)isSupportDynamicConfigration
 {
