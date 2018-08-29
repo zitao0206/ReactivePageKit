@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-ReactiveObjC, 3.1.0
+iOS， 7.0
 
 ## Installation
 
