@@ -21,7 +21,10 @@
     [super viewDidLoad];
     MDBaseModuleModel *model = [MDBaseModuleModel new];
     model.title = @"名称";
-    self.model = model;
+    self.model = [model;
+
+    [self refreshContentSubviewWithIndex:1];
+                  
 }
 
 - (NSArray *)loadContentViews
