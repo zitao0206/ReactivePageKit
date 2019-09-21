@@ -1,16 +1,16 @@
 //
-//  XYBaseModuleViewDelegate.h
+//  MDBaseModuleViewDelegate.h
 //  Pods
 //
 //  Created by lizitao on 2018/2/1.
 //
 
-#ifndef XYBaseModuleViewDelegate_h
-#define XYBaseModuleViewDelegate_h
+#ifndef MDBaseModuleViewDelegate_h
+#define MDBaseModuleViewDelegate_h
 
 @class RACSubject;
-@class XYReactBlackBoard;
-@protocol XYBaseModuleViewDelegate <NSObject>
+@class MDReactBlackBoard;
+@protocol MDBaseModuleViewDelegate <NSObject>
 @required
 //子类重写：加载模块的子View
 - (void)loadModuleSubViews;
@@ -34,4 +34,4 @@
 - (void)moduleWillDisappear;
 @end
 
-#endif /* XYBaseModuleViewDelegate_h */
+#endif /* MDBaseModuleViewDelegate_h */

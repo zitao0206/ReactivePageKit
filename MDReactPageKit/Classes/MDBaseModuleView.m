@@ -1,21 +1,20 @@
 //
-//  XYBaseModuleView.m
-//  XYReactPageKit
+//  MDBaseModuleView.m
+//  MDReactPageKit
 //
 //  Created by lizitao on 2018/2/1.
 //
 
-#import "XYBaseModuleView.h"
+#import "MDBaseModuleView.h"
 #import <ReactiveObjC/ReactiveObjC.h>
-#import "XYBaseModuleViewDelegate.h"
-#import "UIView+XYEasyLayout.h"
+#import "MDBaseModuleViewDelegate.h"
 
-@interface XYBaseModuleView ()<XYBaseModuleViewDelegate>
+@interface MDBaseModuleView ()<MDBaseModuleViewDelegate>
 @end
 
-@implementation XYBaseModuleView
+@implementation MDBaseModuleView
 
-- (instancetype)initWithBoard:(XYReactBlackBoard *)blackBoard
+- (instancetype)initWithBoard:(MDReactBlackBoard *)blackBoard
 {
     if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];

@@ -1,22 +1,22 @@
 //
-//  XYReactBasePageView.m
-//  XYReactPageKit
+//  MDReactBasePageView.m
+//  MDReactPageKit
 //
 //  Created by lizitao on 2018/2/2.
 //
 
-#import "XYReactBasePageView.h"
-#import "UIView+XYEasyLayout.h"
+#import "MDReactBasePageView.h"
+#import <MDCommonKit/MDCommonKit.h>
 #import <ReactiveObjC/ReactiveObjC.h>
-#import "XYBaseModuleView.h"
-#import "XYBaseModuleViewDelegate.h"
+#import "MDBaseModuleView.h"
+#import "MDBaseModuleViewDelegate.h"
 
-@interface XYReactBasePageView ()<UIScrollViewDelegate>
+@interface MDReactBasePageView ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *contentView;
 @end
 
-@implementation XYReactBasePageView
+@implementation MDReactBasePageView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -41,10 +41,10 @@
     return @[];
 }
 
-- (XYReactBlackBoard *)blackBoard
+- (MDReactBlackBoard *)blackBoard
 {
     if(nil == _blackBoard){
-        _blackBoard = [[XYReactBlackBoard alloc] init];
+        _blackBoard = [[MDReactBlackBoard alloc] init];
     }
     return _blackBoard;
 }
@@ -76,8 +76,8 @@
 //加载所有ModuleView的子View
 - (void)loadContentModuleSubViews
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof XYBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(XYBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
             [obj loadModuleSubViews];
         }
     }];
@@ -94,9 +94,9 @@
 //分发数据并绑定height变化监测
 - (void)loadContentModulesData
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof XYBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.moduleIndex = idx;
-        if ([obj conformsToProtocol:@protocol(XYBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
             [obj loadModuleData:self.model];
         }
     }];
@@ -106,7 +106,7 @@
 - (void)bindModuleViewsHeight
 {
     __block RACSignal *signal = [RACSubject subject];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof XYBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         RACSubject *s = obj.heightSignal;
         if (idx == 0) {
             signal = s;
@@ -128,7 +128,7 @@
     @weakify(self);
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
-        if ([obj conformsToProtocol:@protocol(XYBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
             [obj layoutModuleWidth:[self contentWidth]];
             obj.top = layoutOffestY;
             obj.left = 0;
