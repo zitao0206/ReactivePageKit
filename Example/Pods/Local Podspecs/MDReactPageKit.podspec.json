@@ -1,0 +1,22 @@
+{
+  "name": "MDReactPageKit",
+  "version": "0.1.0",
+  "summary": "A short description of MDReactPageKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/leon0206/MDReactPageKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leon0206": "zitao.li@quvideo.com"
+  },
+  "source": {
+    "git": "https://github.com/leon0206/MDReactPageKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MDReactPageKit/Classes/**/*"
+}
