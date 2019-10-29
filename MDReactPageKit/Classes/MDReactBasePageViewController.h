@@ -6,10 +6,10 @@
 //
 
 #import "MDBaseModuleModel.h"
-#import "MDReactBlackBoard.h"
+#import <ReactiveDataBoard/ReactiveBlackBoard.h>
 #import "MDReactPageDefinition.h"
 @interface MDReactBasePageViewController : UIViewController
-@property (nonatomic, strong) MDReactBlackBoard *blackBoard;
+@property (nonatomic, strong) ReactiveBlackBoard *blackBoard;
 @property (nonatomic, strong) id model;
 
 @end

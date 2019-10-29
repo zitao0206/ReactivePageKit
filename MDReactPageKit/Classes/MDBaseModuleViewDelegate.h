@@ -9,7 +9,7 @@
 #define MDBaseModuleViewDelegate_h
 
 @class RACSubject;
-@class MDReactBlackBoard;
+@class ReactiveBlackBoard;
 @protocol MDBaseModuleViewDelegate <NSObject>
 @required
 //子类重写：加载模块的子View

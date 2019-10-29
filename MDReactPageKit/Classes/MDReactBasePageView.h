@@ -6,8 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MDReactBlackBoard;
+@class ReactiveBlackBoard;
 @interface MDReactBasePageView : UIView
-@property (nonatomic, strong) MDReactBlackBoard *blackBoard;
+@property (nonatomic, strong) ReactiveBlackBoard *blackBoard;
 @property (nonatomic, strong) id model;
 @end

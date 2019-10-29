@@ -6,12 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MDCommonKit/MDCommonKit.h>
-#import <MDReactDataBoard/MDReactBlackBoard.h>
+#import <EasyLayout/UIView+EasyLayout.h>
+#import <ReactiveDataBoard/ReactiveBlackBoard.h>
 @class RACSubject;
 @interface MDBaseModuleView : UIView
 @property (nonatomic, strong) RACSubject *heightSignal;
 @property (nonatomic, assign) NSUInteger moduleIndex;
-@property (nonatomic, strong) MDReactBlackBoard *blackBoard;
-- (instancetype)initWithBoard:(MDReactBlackBoard *)blackBoard;
+@property (nonatomic, strong) ReactiveBlackBoard *blackBoard;
+- (instancetype)initWithBoard:(ReactiveBlackBoard *)blackBoard;
 @end

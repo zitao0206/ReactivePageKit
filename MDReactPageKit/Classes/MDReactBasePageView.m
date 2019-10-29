@@ -41,10 +41,10 @@
     return @[];
 }
 
-- (MDReactBlackBoard *)blackBoard
+- (ReactiveBlackBoard *)blackBoard
 {
     if(nil == _blackBoard){
-        _blackBoard = [[MDReactBlackBoard alloc] init];
+        _blackBoard = [[ReactiveBlackBoard alloc] init];
     }
     return _blackBoard;
 }

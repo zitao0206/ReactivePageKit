@@ -37,7 +37,8 @@
     [super viewDidLoad];
     [self loadContentSubviews];
     @weakify(self);
-    [[self.blackBoard signalForKey:MD_ReadjustContentOffset] subscribeNext:^(id x) {
+    
+    [[self.blackBoard addObserver:self forKey:MD_ReadjustContentOffset] subscribeNext:^(id  _Nullable x) {
         @strongify(self);
         CGFloat offset = [x floatValue];
         self.scrollView.contentOffset = CGPointMake(0, offset);
@@ -104,10 +105,10 @@
     }];
 }
 
-- (MDReactBlackBoard *)blackBoard
+- (ReactiveBlackBoard *)blackBoard
 {
     if(nil == _blackBoard){
-        _blackBoard = [[MDReactBlackBoard alloc] init];
+        _blackBoard = [[ReactiveBlackBoard alloc] init];
     }
     return _blackBoard;
 }

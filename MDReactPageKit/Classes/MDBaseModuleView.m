@@ -14,7 +14,7 @@
 
 @implementation MDBaseModuleView
 
-- (instancetype)initWithBoard:(MDReactBlackBoard *)blackBoard
+- (instancetype)initWithBoard:(ReactiveBlackBoard *)blackBoard
 {
     if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];
