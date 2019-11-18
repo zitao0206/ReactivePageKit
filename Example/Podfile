@@ -1,16 +1,12 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Leon0206/MDSpecs.git'
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target 'MDReactPageKit_Example' do
   pod 'MDReactPageKit', :path => '../'
-
-  target 'MDReactPageKit_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
-  end
+  pod 'EasyLayout', '~> 1.0.0'
+  pod 'MDCommonKit', '~> 1.0.0'
+  pod 'ReactiveDataBoard', '4.0.3'
+  pod 'ReactiveObjC', '3.1.0'
 end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F33EAC5D08785AA28B63B1ACA77B6878"
-               BuildableName = "MDReactPageKit.framework"
+               BlueprintIdentifier = "82AD9B00FBA7807895CB89CD87C9F824"
+               BuildableName = "libMDReactPageKit.a"
                BlueprintName = "MDReactPageKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

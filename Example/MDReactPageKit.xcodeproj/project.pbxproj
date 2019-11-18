@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CB8F639BEE07D8F122ADC98 /* Pods_MDReactPageKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF41C60BF1DF3D636C122036 /* Pods_MDReactPageKit_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +22,15 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9A251F2A0DB09CE5B83195E7 /* Pods_MDReactPageKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB93B71532C449B53FAC2F /* Pods_MDReactPageKit_Tests.framework */; };
+		D88EDD8C238272F70074B2E4 /* XYDemoSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */; };
+		D88EDD8D238272F70074B2E4 /* XYDemoPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */; };
+		D88EDD8E238272F70074B2E4 /* XYDemoHeadModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */; };
+		D88EDD8F238272F70074B2E4 /* XYDemoBottomModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */; };
+		D88EDD90238272F70074B2E4 /* XYDemoNavigatorModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */; };
+		D88EDD91238272F70074B2E4 /* XYDemoMiddleModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */; };
+		D88EDD92238272F70074B2E4 /* XYDemoBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */; };
+		D88EDD93238272F70074B2E4 /* XYDemoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */; };
+		F538CDAA161976729D6D8DFE /* libPods-MDReactPageKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60E68292BBFD0A067B893C /* libPods-MDReactPageKit_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,7 @@
 /* Begin PBXFileReference section */
 		2EAB93B71532C449B53FAC2F /* Pods_MDReactPageKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDReactPageKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D54A1997288E5ECA2A073 /* Pods-MDReactPageKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDReactPageKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MDReactPageKit_Example/Pods-MDReactPageKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		551F0C3FD05379BBCD658A82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		551F0C3FD05379BBCD658A82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MDReactPageKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDReactPageKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +66,28 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6D60E68292BBFD0A067B893C /* libPods-MDReactPageKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDReactPageKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		742B1601A402A73675D6B0DE /* Pods-MDReactPageKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDReactPageKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-MDReactPageKit_Tests/Pods-MDReactPageKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4E293D5F13EE1EF6FAC488 /* Pods-MDReactPageKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDReactPageKit_Example.release.xcconfig"; path = "Target Support Files/Pods-MDReactPageKit_Example/Pods-MDReactPageKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B63DFBF6B5E2E4DDC5263E02 /* Pods-MDReactPageKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDReactPageKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MDReactPageKit_Tests/Pods-MDReactPageKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF18FD1AAF5A801873AC5C08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DF41C60BF1DF3D636C122036 /* Pods_MDReactPageKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDReactPageKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F45DA9B09401AE87FB86FF8A /* MDReactPageKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MDReactPageKit.podspec; path = ../MDReactPageKit.podspec; sourceTree = "<group>"; };
+		D88EDD79238272F70074B2E4 /* XYDemoPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoPageView.h; sourceTree = "<group>"; };
+		D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoSubViewViewController.m; sourceTree = "<group>"; };
+		D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoPageView.m; sourceTree = "<group>"; };
+		D88EDD7C238272F70074B2E4 /* XYDemoSubViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoSubViewViewController.h; sourceTree = "<group>"; };
+		D88EDD7E238272F70074B2E4 /* XYDemoBottomModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoBottomModuleView.h; sourceTree = "<group>"; };
+		D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoHeadModuleView.m; sourceTree = "<group>"; };
+		D88EDD80238272F70074B2E4 /* XYDemoNavigatorModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoNavigatorModuleView.h; sourceTree = "<group>"; };
+		D88EDD81238272F70074B2E4 /* XYDemoMiddleModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoMiddleModuleView.h; sourceTree = "<group>"; };
+		D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoBottomModuleView.m; sourceTree = "<group>"; };
+		D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoNavigatorModuleView.m; sourceTree = "<group>"; };
+		D88EDD84238272F70074B2E4 /* XYDemoHeadModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoHeadModuleView.h; sourceTree = "<group>"; };
+		D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoMiddleModuleView.m; sourceTree = "<group>"; };
+		D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoBaseModel.m; sourceTree = "<group>"; };
+		D88EDD88238272F70074B2E4 /* XYDemoBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoBaseModel.h; sourceTree = "<group>"; };
+		D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoPageViewController.m; sourceTree = "<group>"; };
+		D88EDD8B238272F70074B2E4 /* XYDemoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoPageViewController.h; sourceTree = "<group>"; };
+		DF18FD1AAF5A801873AC5C08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F45DA9B09401AE87FB86FF8A /* MDReactPageKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MDReactPageKit.podspec; path = ../MDReactPageKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +98,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1CB8F639BEE07D8F122ADC98 /* Pods_MDReactPageKit_Example.framework in Frameworks */,
+				F538CDAA161976729D6D8DFE /* libPods-MDReactPageKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +109,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				9A251F2A0DB09CE5B83195E7 /* Pods_MDReactPageKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +143,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				DF41C60BF1DF3D636C122036 /* Pods_MDReactPageKit_Example.framework */,
 				2EAB93B71532C449B53FAC2F /* Pods_MDReactPageKit_Tests.framework */,
+				6D60E68292BBFD0A067B893C /* libPods-MDReactPageKit_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +157,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MDViewController.h */,
 				6003F5A6195388D20070C39A /* MDViewController.m */,
+				D88EDD77238272F70074B2E4 /* Demo */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -185,15 +206,67 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		D88EDD77238272F70074B2E4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D88EDD78238272F70074B2E4 /* Demo2 */,
+				D88EDD7D238272F70074B2E4 /* ModuleViews */,
+				D88EDD86238272F70074B2E4 /* Model */,
+				D88EDD89238272F70074B2E4 /* Demo1 */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D88EDD78238272F70074B2E4 /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				D88EDD79238272F70074B2E4 /* XYDemoPageView.h */,
+				D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */,
+				D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */,
+				D88EDD7C238272F70074B2E4 /* XYDemoSubViewViewController.h */,
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
+		D88EDD7D238272F70074B2E4 /* ModuleViews */ = {
+			isa = PBXGroup;
+			children = (
+				D88EDD7E238272F70074B2E4 /* XYDemoBottomModuleView.h */,
+				D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */,
+				D88EDD80238272F70074B2E4 /* XYDemoNavigatorModuleView.h */,
+				D88EDD81238272F70074B2E4 /* XYDemoMiddleModuleView.h */,
+				D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */,
+				D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */,
+				D88EDD84238272F70074B2E4 /* XYDemoHeadModuleView.h */,
+				D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */,
+			);
+			path = ModuleViews;
+			sourceTree = "<group>";
+		};
+		D88EDD86238272F70074B2E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */,
+				D88EDD88238272F70074B2E4 /* XYDemoBaseModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D88EDD89238272F70074B2E4 /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */,
+				D88EDD8B238272F70074B2E4 /* XYDemoPageViewController.h */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
 		FBA345E8F47327200BE9909E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				4E3D54A1997288E5ECA2A073 /* Pods-MDReactPageKit_Example.debug.xcconfig */,
 				AB4E293D5F13EE1EF6FAC488 /* Pods-MDReactPageKit_Example.release.xcconfig */,
-				B63DFBF6B5E2E4DDC5263E02 /* Pods-MDReactPageKit_Tests.debug.xcconfig */,
-				742B1601A402A73675D6B0DE /* Pods-MDReactPageKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +281,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1DC71B6D85375DEB48BBE66A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,11 +295,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MDReactPageKit_Tests" */;
 			buildPhases = (
-				8A31BEC372FE4055F17324BD /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				F6F0F9D2B9C71D24B950F811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +329,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,46 +367,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DC71B6D85375DEB48BBE66A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDReactPageKit_Example/Pods-MDReactPageKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MDReactPageKit/MDReactPageKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDReactPageKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDReactPageKit_Example/Pods-MDReactPageKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A31BEC372FE4055F17324BD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MDReactPageKit_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CFAAA1BC816A5A2BF4EC40AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,30 +389,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6F0F9D2B9C71D24B950F811 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDReactPageKit_Tests/Pods-MDReactPageKit_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
-				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDReactPageKit_Tests/Pods-MDReactPageKit_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,9 +396,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88EDD93238272F70074B2E4 /* XYDemoPageViewController.m in Sources */,
+				D88EDD90238272F70074B2E4 /* XYDemoNavigatorModuleView.m in Sources */,
 				6003F59E195388D20070C39A /* MDAppDelegate.m in Sources */,
+				D88EDD92238272F70074B2E4 /* XYDemoBaseModel.m in Sources */,
+				D88EDD91238272F70074B2E4 /* XYDemoMiddleModuleView.m in Sources */,
+				D88EDD8F238272F70074B2E4 /* XYDemoBottomModuleView.m in Sources */,
 				6003F5A7195388D20070C39A /* MDViewController.m in Sources */,
+				D88EDD8C238272F70074B2E4 /* XYDemoSubViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				D88EDD8E238272F70074B2E4 /* XYDemoHeadModuleView.m in Sources */,
+				D88EDD8D238272F70074B2E4 /* XYDemoPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +563,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63DFBF6B5E2E4DDC5263E02 /* Pods-MDReactPageKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -573,7 +587,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 742B1601A402A73675D6B0DE /* Pods-MDReactPageKit_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
