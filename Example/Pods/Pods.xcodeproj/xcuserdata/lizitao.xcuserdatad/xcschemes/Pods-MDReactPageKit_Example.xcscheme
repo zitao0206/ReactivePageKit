@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50DBD3B4F142BF5C99B6E2E68545DADE"
+               BlueprintIdentifier = "32C9E3B4D57F58D3E55CD3CA25B58DD6"
                BuildableName = "libPods-MDReactPageKit_Example.a"
                BlueprintName = "Pods-MDReactPageKit_Example"
                ReferencedContainer = "container:Pods.xcodeproj">

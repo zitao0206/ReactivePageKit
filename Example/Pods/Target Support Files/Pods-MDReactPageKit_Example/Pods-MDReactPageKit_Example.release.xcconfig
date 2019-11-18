@@ -1,7 +1,7 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/EasyLayout" "${PODS_ROOT}/Headers/Public/MDCommonKit" "${PODS_ROOT}/Headers/Public/MDReactPageKit" "${PODS_ROOT}/Headers/Public/ReactiveDataBoard" "${PODS_ROOT}/Headers/Public/ReactiveObjC"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EasyLayout" "${PODS_CONFIGURATION_BUILD_DIR}/MDCommonKit" "${PODS_CONFIGURATION_BUILD_DIR}/MDReactPageKit" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveDataBoard" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"EasyLayout" -l"MDCommonKit" -l"MDReactPageKit" -l"ReactiveDataBoard" -l"ReactiveObjC" -framework "Foundation"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/EasyLayout" "${PODS_ROOT}/Headers/Public/MDCommonKit" "${PODS_ROOT}/Headers/Public/MDReactPageKit" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/ReactiveDataBoard" "${PODS_ROOT}/Headers/Public/ReactiveObjC"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/EasyLayout" "${PODS_CONFIGURATION_BUILD_DIR}/MDCommonKit" "${PODS_CONFIGURATION_BUILD_DIR}/MDReactPageKit" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveDataBoard" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"EasyLayout" -l"MDCommonKit" -l"MDReactPageKit" -l"Masonry" -l"ReactiveDataBoard" -l"ReactiveObjC" -framework "Foundation" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -22,14 +22,14 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D88EDD8C238272F70074B2E4 /* XYDemoSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */; };
-		D88EDD8D238272F70074B2E4 /* XYDemoPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */; };
-		D88EDD8E238272F70074B2E4 /* XYDemoHeadModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */; };
-		D88EDD8F238272F70074B2E4 /* XYDemoBottomModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */; };
-		D88EDD90238272F70074B2E4 /* XYDemoNavigatorModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */; };
-		D88EDD91238272F70074B2E4 /* XYDemoMiddleModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */; };
-		D88EDD92238272F70074B2E4 /* XYDemoBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */; };
-		D88EDD93238272F70074B2E4 /* XYDemoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */; };
+		D88EDD8C238272F70074B2E4 /* MDDemoSubViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7A238272F70074B2E4 /* MDDemoSubViewViewController.m */; };
+		D88EDD8D238272F70074B2E4 /* MDDemoPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7B238272F70074B2E4 /* MDDemoPageView.m */; };
+		D88EDD8E238272F70074B2E4 /* MDDemoHeadModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD7F238272F70074B2E4 /* MDDemoHeadModuleView.m */; };
+		D88EDD8F238272F70074B2E4 /* MDDemoBottomModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD82238272F70074B2E4 /* MDDemoBottomModuleView.m */; };
+		D88EDD90238272F70074B2E4 /* MDDemoNavigatorModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD83238272F70074B2E4 /* MDDemoNavigatorModuleView.m */; };
+		D88EDD91238272F70074B2E4 /* MDDemoMiddleModuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD85238272F70074B2E4 /* MDDemoMiddleModuleView.m */; };
+		D88EDD92238272F70074B2E4 /* MDDemoBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD87238272F70074B2E4 /* MDDemoBaseModel.m */; };
+		D88EDD93238272F70074B2E4 /* MDDemoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88EDD8A238272F70074B2E4 /* MDDemoPageViewController.m */; };
 		F538CDAA161976729D6D8DFE /* libPods-MDReactPageKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60E68292BBFD0A067B893C /* libPods-MDReactPageKit_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -70,22 +70,22 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4E293D5F13EE1EF6FAC488 /* Pods-MDReactPageKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDReactPageKit_Example.release.xcconfig"; path = "Target Support Files/Pods-MDReactPageKit_Example/Pods-MDReactPageKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D88EDD79238272F70074B2E4 /* XYDemoPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoPageView.h; sourceTree = "<group>"; };
-		D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoSubViewViewController.m; sourceTree = "<group>"; };
-		D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoPageView.m; sourceTree = "<group>"; };
-		D88EDD7C238272F70074B2E4 /* XYDemoSubViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoSubViewViewController.h; sourceTree = "<group>"; };
-		D88EDD7E238272F70074B2E4 /* XYDemoBottomModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoBottomModuleView.h; sourceTree = "<group>"; };
-		D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoHeadModuleView.m; sourceTree = "<group>"; };
-		D88EDD80238272F70074B2E4 /* XYDemoNavigatorModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoNavigatorModuleView.h; sourceTree = "<group>"; };
-		D88EDD81238272F70074B2E4 /* XYDemoMiddleModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoMiddleModuleView.h; sourceTree = "<group>"; };
-		D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoBottomModuleView.m; sourceTree = "<group>"; };
-		D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoNavigatorModuleView.m; sourceTree = "<group>"; };
-		D88EDD84238272F70074B2E4 /* XYDemoHeadModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoHeadModuleView.h; sourceTree = "<group>"; };
-		D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoMiddleModuleView.m; sourceTree = "<group>"; };
-		D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoBaseModel.m; sourceTree = "<group>"; };
-		D88EDD88238272F70074B2E4 /* XYDemoBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoBaseModel.h; sourceTree = "<group>"; };
-		D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDemoPageViewController.m; sourceTree = "<group>"; };
-		D88EDD8B238272F70074B2E4 /* XYDemoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDemoPageViewController.h; sourceTree = "<group>"; };
+		D88EDD79238272F70074B2E4 /* MDDemoPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoPageView.h; sourceTree = "<group>"; };
+		D88EDD7A238272F70074B2E4 /* MDDemoSubViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoSubViewViewController.m; sourceTree = "<group>"; };
+		D88EDD7B238272F70074B2E4 /* MDDemoPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoPageView.m; sourceTree = "<group>"; };
+		D88EDD7C238272F70074B2E4 /* MDDemoSubViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoSubViewViewController.h; sourceTree = "<group>"; };
+		D88EDD7E238272F70074B2E4 /* MDDemoBottomModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoBottomModuleView.h; sourceTree = "<group>"; };
+		D88EDD7F238272F70074B2E4 /* MDDemoHeadModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoHeadModuleView.m; sourceTree = "<group>"; };
+		D88EDD80238272F70074B2E4 /* MDDemoNavigatorModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoNavigatorModuleView.h; sourceTree = "<group>"; };
+		D88EDD81238272F70074B2E4 /* MDDemoMiddleModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoMiddleModuleView.h; sourceTree = "<group>"; };
+		D88EDD82238272F70074B2E4 /* MDDemoBottomModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoBottomModuleView.m; sourceTree = "<group>"; };
+		D88EDD83238272F70074B2E4 /* MDDemoNavigatorModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoNavigatorModuleView.m; sourceTree = "<group>"; };
+		D88EDD84238272F70074B2E4 /* MDDemoHeadModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoHeadModuleView.h; sourceTree = "<group>"; };
+		D88EDD85238272F70074B2E4 /* MDDemoMiddleModuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoMiddleModuleView.m; sourceTree = "<group>"; };
+		D88EDD87238272F70074B2E4 /* MDDemoBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoBaseModel.m; sourceTree = "<group>"; };
+		D88EDD88238272F70074B2E4 /* MDDemoBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoBaseModel.h; sourceTree = "<group>"; };
+		D88EDD8A238272F70074B2E4 /* MDDemoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDemoPageViewController.m; sourceTree = "<group>"; };
+		D88EDD8B238272F70074B2E4 /* MDDemoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDemoPageViewController.h; sourceTree = "<group>"; };
 		DF18FD1AAF5A801873AC5C08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F45DA9B09401AE87FB86FF8A /* MDReactPageKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MDReactPageKit.podspec; path = ../MDReactPageKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -220,10 +220,10 @@
 		D88EDD78238272F70074B2E4 /* Demo2 */ = {
 			isa = PBXGroup;
 			children = (
-				D88EDD79238272F70074B2E4 /* XYDemoPageView.h */,
-				D88EDD7A238272F70074B2E4 /* XYDemoSubViewViewController.m */,
-				D88EDD7B238272F70074B2E4 /* XYDemoPageView.m */,
-				D88EDD7C238272F70074B2E4 /* XYDemoSubViewViewController.h */,
+				D88EDD79238272F70074B2E4 /* MDDemoPageView.h */,
+				D88EDD7A238272F70074B2E4 /* MDDemoSubViewViewController.m */,
+				D88EDD7B238272F70074B2E4 /* MDDemoPageView.m */,
+				D88EDD7C238272F70074B2E4 /* MDDemoSubViewViewController.h */,
 			);
 			path = Demo2;
 			sourceTree = "<group>";
@@ -231,14 +231,14 @@
 		D88EDD7D238272F70074B2E4 /* ModuleViews */ = {
 			isa = PBXGroup;
 			children = (
-				D88EDD7E238272F70074B2E4 /* XYDemoBottomModuleView.h */,
-				D88EDD7F238272F70074B2E4 /* XYDemoHeadModuleView.m */,
-				D88EDD80238272F70074B2E4 /* XYDemoNavigatorModuleView.h */,
-				D88EDD81238272F70074B2E4 /* XYDemoMiddleModuleView.h */,
-				D88EDD82238272F70074B2E4 /* XYDemoBottomModuleView.m */,
-				D88EDD83238272F70074B2E4 /* XYDemoNavigatorModuleView.m */,
-				D88EDD84238272F70074B2E4 /* XYDemoHeadModuleView.h */,
-				D88EDD85238272F70074B2E4 /* XYDemoMiddleModuleView.m */,
+				D88EDD7E238272F70074B2E4 /* MDDemoBottomModuleView.h */,
+				D88EDD7F238272F70074B2E4 /* MDDemoHeadModuleView.m */,
+				D88EDD80238272F70074B2E4 /* MDDemoNavigatorModuleView.h */,
+				D88EDD81238272F70074B2E4 /* MDDemoMiddleModuleView.h */,
+				D88EDD82238272F70074B2E4 /* MDDemoBottomModuleView.m */,
+				D88EDD83238272F70074B2E4 /* MDDemoNavigatorModuleView.m */,
+				D88EDD84238272F70074B2E4 /* MDDemoHeadModuleView.h */,
+				D88EDD85238272F70074B2E4 /* MDDemoMiddleModuleView.m */,
 			);
 			path = ModuleViews;
 			sourceTree = "<group>";
@@ -246,8 +246,8 @@
 		D88EDD86238272F70074B2E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D88EDD87238272F70074B2E4 /* XYDemoBaseModel.m */,
-				D88EDD88238272F70074B2E4 /* XYDemoBaseModel.h */,
+				D88EDD87238272F70074B2E4 /* MDDemoBaseModel.m */,
+				D88EDD88238272F70074B2E4 /* MDDemoBaseModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,8 +255,8 @@
 		D88EDD89238272F70074B2E4 /* Demo1 */ = {
 			isa = PBXGroup;
 			children = (
-				D88EDD8A238272F70074B2E4 /* XYDemoPageViewController.m */,
-				D88EDD8B238272F70074B2E4 /* XYDemoPageViewController.h */,
+				D88EDD8A238272F70074B2E4 /* MDDemoPageViewController.m */,
+				D88EDD8B238272F70074B2E4 /* MDDemoPageViewController.h */,
 			);
 			path = Demo1;
 			sourceTree = "<group>";
@@ -396,17 +396,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88EDD93238272F70074B2E4 /* XYDemoPageViewController.m in Sources */,
-				D88EDD90238272F70074B2E4 /* XYDemoNavigatorModuleView.m in Sources */,
+				D88EDD93238272F70074B2E4 /* MDDemoPageViewController.m in Sources */,
+				D88EDD90238272F70074B2E4 /* MDDemoNavigatorModuleView.m in Sources */,
 				6003F59E195388D20070C39A /* MDAppDelegate.m in Sources */,
-				D88EDD92238272F70074B2E4 /* XYDemoBaseModel.m in Sources */,
-				D88EDD91238272F70074B2E4 /* XYDemoMiddleModuleView.m in Sources */,
-				D88EDD8F238272F70074B2E4 /* XYDemoBottomModuleView.m in Sources */,
+				D88EDD92238272F70074B2E4 /* MDDemoBaseModel.m in Sources */,
+				D88EDD91238272F70074B2E4 /* MDDemoMiddleModuleView.m in Sources */,
+				D88EDD8F238272F70074B2E4 /* MDDemoBottomModuleView.m in Sources */,
 				6003F5A7195388D20070C39A /* MDViewController.m in Sources */,
-				D88EDD8C238272F70074B2E4 /* XYDemoSubViewViewController.m in Sources */,
+				D88EDD8C238272F70074B2E4 /* MDDemoSubViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				D88EDD8E238272F70074B2E4 /* XYDemoHeadModuleView.m in Sources */,
-				D88EDD8D238272F70074B2E4 /* XYDemoPageView.m in Sources */,
+				D88EDD8E238272F70074B2E4 /* MDDemoHeadModuleView.m in Sources */,
+				D88EDD8D238272F70074B2E4 /* MDDemoPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

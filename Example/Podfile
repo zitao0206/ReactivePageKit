@@ -9,4 +9,6 @@ target 'MDReactPageKit_Example' do
   pod 'MDCommonKit', '~> 1.0.0'
   pod 'ReactiveDataBoard', '4.0.3'
   pod 'ReactiveObjC', '3.1.0'
+  pod 'Masonry', '1.1.0'
+  
 end
