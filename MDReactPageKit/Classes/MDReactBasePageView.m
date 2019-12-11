@@ -171,6 +171,7 @@
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     self.scrollView.frame = CGRectMake(0, 0, [self contentWidth], [self contentHeight]);
     self.contentView.top = 0;
     self.contentView.left = 0;
