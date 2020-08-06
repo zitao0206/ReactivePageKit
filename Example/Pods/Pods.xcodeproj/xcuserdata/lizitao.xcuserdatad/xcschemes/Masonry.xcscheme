@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B854683690DC218F2B6E2FFDB0D27CDC"
+               BlueprintIdentifier = "16008E0F44ACDD199ACB366407DCE6E5"
                BuildableName = "libMasonry.a"
                BlueprintName = "Masonry"
                ReferencedContainer = "container:Pods.xcodeproj">

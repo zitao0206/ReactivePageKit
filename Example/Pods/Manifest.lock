@@ -1,8 +1,8 @@
 PODS:
   - EasyLayout (1.0.22)
   - Masonry (1.1.0)
-  - MDCommonKit (1.0.19)
-  - MDReactPageKit (1.0.4):
+  - MDCommonKit (1.0.25)
+  - MDReactPageKit (1.0.6):
     - ReactiveDataBoard
     - ReactiveObjC
   - ReactiveDataBoard (4.0.3)
@@ -32,11 +32,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   EasyLayout: 24623ce8ec65089f043c79d8c966a788817b2bb2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MDCommonKit: 830d828ffbc76feeb07a801204530279e7c89506
-  MDReactPageKit: 8f83131423de0b958f0a2cedde3d19e9789490c0
+  MDCommonKit: 71c275fa2afc1ab07bb026400181ce7094e11a39
+  MDReactPageKit: 72c4f0e663e8cf613a930d47fe2918cc28cdcb91
   ReactiveDataBoard: 70b3efbd748b065b28eb72bc06dbac3ef9ef20fa
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
 
 PODFILE CHECKSUM: 95f0719dc55bf93f3d97bacf2ab62e35b8e8eee9
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.5.3

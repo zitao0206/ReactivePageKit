@@ -18,6 +18,8 @@
 - (void)loadModuleData:(id)model;
 //子类重写：布局模块
 - (void)layoutModuleWidth:(CGFloat)width;
+
+@optional
 //子类重写：是否需要固定，默认否，是的话添加到self.view上
 - (BOOL)isModuleNeedFixed;
 //子类重写：是否需要固定到底部，默认否，是的话添加到self.view底部
@@ -25,7 +27,6 @@
 //子类重写：是否需要固定到顶部，默认否，是的话添加到self.view顶部
 - (BOOL)isModuleNeedFixedToTop;
 
-@optional
 //子类重写：模块WillAppear
 - (void)moduleWillAppear;
 //子类重写：模块DidAppear

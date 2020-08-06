@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA753B7A4AF3B41BA88F8E6350AE7F2"
+               BlueprintIdentifier = "4E325BA4C07C5E37D5EDC67478314B42"
                BuildableName = "libMDCommonKit.a"
                BlueprintName = "MDCommonKit"
                ReferencedContainer = "container:Pods.xcodeproj">
