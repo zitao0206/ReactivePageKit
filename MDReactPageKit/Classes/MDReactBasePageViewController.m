@@ -38,7 +38,7 @@
     [self loadContentSubviews];
     @weakify(self);
     
-    [[self.blackBoard addObserver:self forKey:MD_ReadjustContentOffset] subscribeNext:^(id  _Nullable x) {
+    [[self.blackBoard valueForKey:MD_ReadjustContentOffset] subscribeNext:^(id  _Nullable x) {
         @strongify(self);
         CGFloat offset = [x floatValue];
         self.scrollView.contentOffset = CGPointMake(0, offset);
