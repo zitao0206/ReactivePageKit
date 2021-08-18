@@ -46,5 +46,6 @@ TODO: Add long description of the pod here.
   s.dependency 'ReactiveDataBoard'
   s.dependency 'ReactiveObjC'
   s.dependency 'EasyLayout'
+  s.dependency 'MDCommonKit'
   
 end
