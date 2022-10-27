@@ -1,5 +1,6 @@
 #获取podspec文件名称
 
+
 packageDIR=`pwd`
 podName=${packageDIR##*/}
 podspecFile=${podName}'.podspec'
