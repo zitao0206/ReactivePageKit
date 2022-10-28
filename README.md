@@ -22,7 +22,7 @@ pod 'MDReactPageKit'
 
 ## Author
 
-leon0206, zitao.li@quvideo.com
+leon0206, 634376133@qq.com
 
 ## License
 
