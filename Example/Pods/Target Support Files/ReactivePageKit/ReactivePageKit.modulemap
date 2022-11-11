@@ -1,0 +1,6 @@
+framework module ReactivePageKit {
+  umbrella header "ReactivePageKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

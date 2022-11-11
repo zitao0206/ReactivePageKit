@@ -1,9 +1,9 @@
-# MDReactPageKit
+# ReactivePageKit
 
-[![CI Status](https://img.shields.io/travis/leon0206/MDReactPageKit.svg?style=flat)](https://travis-ci.org/leon0206/MDReactPageKit)
-[![Version](https://img.shields.io/cocoapods/v/MDReactPageKit.svg?style=flat)](https://cocoapods.org/pods/MDReactPageKit)
-[![License](https://img.shields.io/cocoapods/l/MDReactPageKit.svg?style=flat)](https://cocoapods.org/pods/MDReactPageKit)
-[![Platform](https://img.shields.io/cocoapods/p/MDReactPageKit.svg?style=flat)](https://cocoapods.org/pods/MDReactPageKit)
+[![CI Status](https://img.shields.io/travis/leon0206/ReactivePageKit.svg?style=flat)](https://travis-ci.org/leon0206/ReactivePageKit)
+[![Version](https://img.shields.io/cocoapods/v/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
+[![License](https://img.shields.io/cocoapods/l/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
+[![Platform](https://img.shields.io/cocoapods/p/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
 
 ## Example
 
@@ -13,11 +13,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-MDReactPageKit is available through [CocoaPods](https://cocoapods.org). To install
+ReactivePageKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MDReactPageKit'
+pod 'ReactivePageKit'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ leon0206, 634376133@qq.com
 
 ## License
 
-MDReactPageKit is available under the MIT license. See the LICENSE file for more info.
+ReactivePageKit is available under the MIT license. See the LICENSE file for more info.

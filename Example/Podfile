@@ -1,14 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
+
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 source 'https://github.com/Leon0206/MDSpecs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
-target 'MDReactPageKit_Example' do
-  pod 'MDReactPageKit', :path => '../'
-  pod 'EasyLayout', '~> 1.0.0'
-  pod 'MDCommonKit', '~> 1.0.0'
-  pod 'ReactiveDataBoard', '4.0.3'
-  pod 'ReactiveObjC', '3.1.0'
-  pod 'Masonry', '1.1.0'
-  
+target 'ReactivePageKit_Example' do
+  pod 'ReactivePageKit', :path => '../'
+
 end

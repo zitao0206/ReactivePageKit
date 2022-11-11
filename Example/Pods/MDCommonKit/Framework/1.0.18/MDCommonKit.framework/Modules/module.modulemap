@@ -1,6 +1,0 @@
-framework module MDCommonKit {
-  umbrella header "MDCommonKit.h"
-
-  export *
-  module * { export * }
-}

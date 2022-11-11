@@ -1,48 +1,35 @@
 //
-//  MDReactPageKitTests.m
-//  MDReactPageKitTests
+//  ReactivePageKitTests.m
+//  ReactivePageKitTests
 //
-//  Created by leon0206 on 09/21/2019.
-//  Copyright (c) 2019 leon0206. All rights reserved.
+//  Created by leon0206 on 11/10/2022.
+//  Copyright (c) 2022 leon0206. All rights reserved.
 //
 
-// https://github.com/Specta/Specta
+@import XCTest;
 
-SpecBegin(InitialSpecs)
+@interface Tests : XCTestCase
 
-describe(@"these will fail", ^{
+@end
 
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
+@implementation Tests
 
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
-    
-    it(@"will wait for 10 seconds and fail", ^{
-        waitUntil(^(DoneCallback done) {
-        
-        });
-    });
-});
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
 
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
-    });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
-        });
-    });
-});
+- (void)tearDown
+{
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
 
-SpecEnd
+- (void)testExample
+{
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+@end
 

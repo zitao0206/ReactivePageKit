@@ -4,27 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AKOCommonToolsKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EasyLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MDCommonKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MDReactPageKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-MDReactPageKit_Example.xcscheme</key>
+		<key>Pods-ReactivePageKit_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -35,6 +25,11 @@
 			<false/>
 		</dict>
 		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactivePageKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

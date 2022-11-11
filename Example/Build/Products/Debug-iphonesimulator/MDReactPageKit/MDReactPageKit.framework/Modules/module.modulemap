@@ -1,6 +1,0 @@
-framework module MDReactPageKit {
-  umbrella header "MDReactPageKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

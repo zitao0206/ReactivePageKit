@@ -1,0 +1,36 @@
+{
+  "name": "ReactivePageKit",
+  "version": "0.0.1",
+  "summary": "A short description of ReactivePageKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/leon0206/ReactivePageKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "leon0206": "634376133@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/leon0206/ReactivePageKit.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ReactivePageKit/Classes/**/*",
+  "dependencies": {
+    "ReactiveDataBoard": [
+
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "EasyLayout": [
+
+    ],
+    "AKOCommonToolsKit": [
+
+    ]
+  }
+}

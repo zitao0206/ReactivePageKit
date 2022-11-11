@@ -1,42 +1,37 @@
 PODS:
+  - AKOCommonToolsKit (0.0.7)
   - EasyLayout (1.0.22)
-  - Masonry (1.1.0)
-  - MDCommonKit (1.0.25)
-  - MDReactPageKit (1.0.6):
+  - ReactiveDataBoard (4.0.7):
+    - ReactiveObjC
+  - ReactiveObjC (3.1.1)
+  - ReactivePageKit (0.0.1):
+    - AKOCommonToolsKit
+    - EasyLayout
     - ReactiveDataBoard
     - ReactiveObjC
-  - ReactiveDataBoard (4.0.3)
-  - ReactiveObjC (3.1.0)
 
 DEPENDENCIES:
-  - EasyLayout (~> 1.0.0)
-  - Masonry (= 1.1.0)
-  - MDCommonKit (~> 1.0.0)
-  - MDReactPageKit (from `../`)
-  - ReactiveDataBoard (= 4.0.3)
-  - ReactiveObjC (= 3.1.0)
+  - ReactivePageKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Masonry
-    - ReactiveObjC
   https://github.com/Leon0206/MDSpecs.git:
+    - AKOCommonToolsKit
     - EasyLayout
-    - MDCommonKit
     - ReactiveDataBoard
+  trunk:
+    - ReactiveObjC
 
 EXTERNAL SOURCES:
-  MDReactPageKit:
+  ReactivePageKit:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AKOCommonToolsKit: 853f5fe5030abf74329c971c18228f597e13a5ea
   EasyLayout: 24623ce8ec65089f043c79d8c966a788817b2bb2
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MDCommonKit: 71c275fa2afc1ab07bb026400181ce7094e11a39
-  MDReactPageKit: 72c4f0e663e8cf613a930d47fe2918cc28cdcb91
-  ReactiveDataBoard: 70b3efbd748b065b28eb72bc06dbac3ef9ef20fa
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ReactiveDataBoard: e2bc2305685ed66d496b5270a69165e090e47ed7
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  ReactivePageKit: eb31b727d413cb170afeafae14774511b43a8917
 
-PODFILE CHECKSUM: 95f0719dc55bf93f3d97bacf2ab62e35b8e8eee9
+PODFILE CHECKSUM: 670d66f05eecfa26f0bd9355399b6ee889987c44
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.11.3
