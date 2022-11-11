@@ -1,4 +1,4 @@
-#获取podspec文件名称
+#Get the name of the podspec file
 
 
 packageDIR=`pwd`
