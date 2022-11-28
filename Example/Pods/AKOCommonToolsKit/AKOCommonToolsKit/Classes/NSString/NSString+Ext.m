@@ -1,6 +1,6 @@
 //
 //  NSString+Ext.m
-//  MDProject
+//  AKOCommonToolsKit
 //
 //  Created by Leon on 17/3/12.
 //  Copyright © 2017年 Leon0206. All rights reserved.

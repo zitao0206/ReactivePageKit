@@ -1,6 +1,6 @@
 //
 //  NSArray+functional.h
-//  MDProject
+//  AKOCommonToolsKit
 //
 //  Created by Leon on 17/3/12.
 //  Copyright © 2017年 Leon0206. All rights reserved.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^MDEnumerateBlock)(NSInteger index, id obj);
-typedef id (^MDTransformBlock)(id obj);
-typedef BOOL (^MDValidationBlock)(id obj);
-typedef id (^MDAccumulationBlock)(id sum, id obj);
+typedef void(^AKOEnumerateBlock)(NSInteger index, id obj);
+typedef id (^AKOTransformBlock)(id obj);
+typedef BOOL (^AKOValidationBlock)(id obj);
+typedef id (^AKOAccumulationBlock)(id sum, id obj);
 
 @interface NSArray (functional1)
 
@@ -20,7 +20,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *  @warning if index is not needed, prefer forin loop; consider map select reduce first
  *  @param block side effect logic
  */
-- (void)MD_eachWithIndex:(MDEnumerateBlock)block;
+- (void)AKO_eachWithIndex:(AKOEnumerateBlock)block;
 
 /**
  *  functional map method
@@ -29,7 +29,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return mapped array
  */
-- (NSArray *)MD_map:(MDTransformBlock)block;
+- (NSArray *)AKO_map:(AKOTransformBlock)block;
 
 /**
  *  function select method
@@ -38,7 +38,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return new array with selectecd objects
  */
-- (NSArray *)MD_select:(MDValidationBlock)block;
+- (NSArray *)AKO_select:(AKOValidationBlock)block;
 
 /**
  *  functional reject, similar with select
@@ -47,7 +47,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return new array with filterd objects
  */
-- (NSArray *)MD_reject:(MDValidationBlock)block;
+- (NSArray *)AKO_reject:(AKOValidationBlock)block;
 
 /**
  *  functional reduce method
@@ -57,7 +57,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return sum
  */
-- (id)MD_reduce:(id)initial withBlock:(MDAccumulationBlock)block;
+- (id)AKO_reduce:(id)initial withBlock:(AKOAccumulationBlock)block;
 
 /**
  *  take first n objects as array, if n > array length, return self
@@ -66,7 +66,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return array
  */
-- (instancetype)MD_take:(NSUInteger)n;
+- (instancetype)AKO_take:(NSUInteger)n;
 
 /**
  *  find the object match condition in array
@@ -75,7 +75,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return matched object or nil
  */
-- (id)MD_find:(MDValidationBlock)block;
+- (id)AKO_find:(AKOValidationBlock)block;
 
 /**
  *  check whether all objects in array match condition
@@ -84,7 +84,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return a
  */
-- (BOOL)MD_allObjectsMatched:(MDValidationBlock)block;
+- (BOOL)AKO_allObjectsMatched:(AKOValidationBlock)block;
 
 
 
@@ -95,7 +95,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return a
  */
-- (BOOL)MD_anyObjectMatched:(MDValidationBlock)block;
+- (BOOL)AKO_anyObjectMatched:(AKOValidationBlock)block;
 
 /**
  *  join array of string to a string
@@ -104,7 +104,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return string
  */
-- (NSString *)MD_join:(NSString *)seperator;
+- (NSString *)AKO_join:(NSString *)seperator;
 
 /**
  *  return the first matched object in array
@@ -113,7 +113,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return the first matched object, if not found, return nil
  */
-- (id)MD_match:(MDValidationBlock)block;
+- (id)AKO_match:(AKOValidationBlock)block;
 
 /**
  *  check whether array contain matched object
@@ -122,7 +122,7 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return bool
  */
-- (BOOL)MD_existObjectMatch:(MDValidationBlock)block;
+- (BOOL)AKO_existObjectMatch:(AKOValidationBlock)block;
 
 /**
  *  check whether all objects in array match the validation
@@ -131,13 +131,13 @@ typedef id (^MDAccumulationBlock)(id sum, id obj);
  *
  *  @return bool
  */
-- (BOOL)MD_allObjectMatch:(MDValidationBlock)block;
+- (BOOL)AKO_allObjectMatch:(AKOValidationBlock)block;
 
 
-- (NSArray *)MD_groupBy:(MDTransformBlock)block;
+- (NSArray *)AKO_groupBy:(AKOTransformBlock)block;
 
-- (NSArray *)MD_zip:(NSArray *)array;
+- (NSArray *)AKO_zip:(NSArray *)array;
 
-- (NSString *)MD_insertIntoPlaceHolderString:(NSString *)placeHolder;
+- (NSString *)AKO_insertIntoPlaceHolderString:(NSString *)placeHolder;
 
 @end

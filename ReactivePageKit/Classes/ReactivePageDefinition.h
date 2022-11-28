@@ -10,4 +10,4 @@
 
 #define Reactive_ReadjustContentOffset    @"reactive_readjust_contentOffset"
 
-#endif /* MDReactPageDefinition_h */
+#endif /* ReactivePageDefinition_h */

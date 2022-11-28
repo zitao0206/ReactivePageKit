@@ -76,8 +76,8 @@
 //加载所有ModuleView的子View
 - (void)loadContentModuleSubViews
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleSubViews];
         }
     }];
@@ -94,9 +94,9 @@
 //分发数据并绑定height变化监测
 - (void)loadContentModulesData
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.moduleIndex = idx;
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleData:self.model];
         }
     }];
@@ -106,7 +106,7 @@
 - (void)bindModuleViewsHeight
 {
     __block RACSignal *signal = [RACSubject subject];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         RACSubject *s = obj.heightSignal;
         if (idx == 0) {
             signal = s;
@@ -128,7 +128,7 @@
     @weakify(self);
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj layoutModuleWidth:[self contentWidth]];
             obj.top = layoutOffestY;
             obj.left = 0;

@@ -1,12 +1,12 @@
 //
-//  MDCommonMacroDefine.h
-//  MDCommonKit
+//  AKOCommonMacroDefine.h
+//  AKOCommonToolsKit
 //
 //  Created by Leon0206 on 2019/9/16.
 //
 
-#ifndef MDCommonMacroDefine_h
-#define MDCommonMacroDefine_h
+#ifndef AKOCommonMacroDefine_h
+#define AKOCommonMacroDefine_h
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -14,4 +14,4 @@
 #define kScreenCenterY [UIScreen mainScreen].bounds.size.height / 2.0
 
 
-#endif /* MDCommonMacroDefine_h */
+#endif /* AKOCommonMacroDefine_h */

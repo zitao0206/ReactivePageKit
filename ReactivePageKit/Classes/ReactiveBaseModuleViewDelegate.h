@@ -34,4 +34,4 @@
 - (void)moduleWillDisappear;
 @end
 
-#endif /* MDBaseModuleViewDelegate_h */
+#endif /* ReactiveBaseModuleViewDelegate_h */

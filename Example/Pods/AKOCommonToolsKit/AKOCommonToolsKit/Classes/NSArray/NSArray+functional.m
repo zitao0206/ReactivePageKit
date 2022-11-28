@@ -1,6 +1,6 @@
 //
 //  NSArray+functional.m
-//  MDProject
+//  AKOCommonToolsKit
 //
 //  Created by Leon on 17/3/12.
 //  Copyright © 2017年 Leon0206. All rights reserved.
@@ -10,7 +10,7 @@
 
 @implementation NSArray (functional1)
 
-- (void)MD_eachWithIndex:(MDEnumerateBlock)block {
+- (void)AKO_eachWithIndex:(AKOEnumerateBlock)block {
     NSInteger index = 0;
     for (id obj in self) {
         block(index, obj);
@@ -18,7 +18,7 @@
     }
 }
 
-- (NSArray *)MD_map:(MDTransformBlock)block{
+- (NSArray *)AKO_map:(AKOTransformBlock)block{
     NSParameterAssert(block != nil);
     NSMutableArray *ret = [NSMutableArray arrayWithCapacity:self.count];
     for (id obj in self) {
@@ -27,14 +27,14 @@
     return ret;
 }
 
-- (NSArray *)MD_select:(MDValidationBlock)block{
+- (NSArray *)AKO_select:(AKOValidationBlock)block{
     NSParameterAssert(block != nil);
 	return [self objectsAtIndexes:[self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
 		return block(obj);
 	}]];
 }
 
-- (NSArray *)MD_reject:(MDValidationBlock)block{
+- (NSArray *)AKO_reject:(AKOValidationBlock)block{
     NSParameterAssert(block != nil);
 	
 	return [self objectsAtIndexes:[self indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
@@ -42,7 +42,7 @@
 	}]];
 }
 
-- (id)MD_reduce:(id)initial withBlock:(MDAccumulationBlock)block {
+- (id)AKO_reduce:(id)initial withBlock:(AKOAccumulationBlock)block {
 	NSParameterAssert(block != nil);
 	id result = initial;
     
@@ -52,12 +52,12 @@
 	return result;
 }
 
-- (instancetype)MD_take:(NSUInteger)n {
+- (instancetype)AKO_take:(NSUInteger)n {
     if ([self count] <= n) return self;
     return [self subarrayWithRange:NSMakeRange(0, n)];
 }
 
-- (id)MD_find:(MDValidationBlock)block {
+- (id)AKO_find:(AKOValidationBlock)block {
     for (id obj in self) {
         if (block(obj)) {
             return obj;
@@ -66,7 +66,7 @@
     return nil;
 }
 
-- (id)MD_match:(MDValidationBlock)block {
+- (id)AKO_match:(AKOValidationBlock)block {
     for (id object in self) {
         if (block(object)) {
             return object;
@@ -75,7 +75,7 @@
     return nil;
 }
 
-- (BOOL)MD_allObjectsMatched:(MDValidationBlock)block {
+- (BOOL)AKO_allObjectsMatched:(AKOValidationBlock)block {
     for (id obj in self) {
         if (!block(obj)) {
             return NO;
@@ -84,7 +84,7 @@
     return YES;
 }
 
-- (BOOL)MD_anyObjectMatched:(MDValidationBlock)block {
+- (BOOL)AKO_anyObjectMatched:(AKOValidationBlock)block {
     for (id obj in self) {
         if (block(obj)) {
             return YES;
@@ -93,9 +93,9 @@
     return NO;
 }
 
-- (NSString *)MD_join:(NSString *)seperator {
+- (NSString *)AKO_join:(NSString *)seperator {
     NSMutableString *string = [NSMutableString string];
-    [self MD_eachWithIndex:^(NSInteger index, id obj) {
+    [self AKO_eachWithIndex:^(NSInteger index, id obj) {
         if (index != 0) {
             [string appendString:seperator];
         }
@@ -105,17 +105,17 @@
     
 }
 
-- (BOOL)MD_existObjectMatch:(MDValidationBlock)block {
-    return [self MD_match:block] != nil;
+- (BOOL)AKO_existObjectMatch:(AKOValidationBlock)block {
+    return [self AKO_match:block] != nil;
 }
 
-- (BOOL)MD_allObjectMatch:(MDValidationBlock)block {
-    return [self MD_match:^BOOL(id obj) {
+- (BOOL)AKO_allObjectMatch:(AKOValidationBlock)block {
+    return [self AKO_match:^BOOL(id obj) {
         return !block(obj);
     }] == nil;
 }
 
-- (NSArray *)MD_groupBy:(MDTransformBlock)block {
+- (NSArray *)AKO_groupBy:(AKOTransformBlock)block {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     for (id obj in self) {
         NSString *key = block(obj);
@@ -127,9 +127,9 @@
     return [dic allValues];
 }
 
-- (NSArray *)MD_zip:(NSArray *)array {
+- (NSArray *)AKO_zip:(NSArray *)array {
     NSMutableArray *result = [NSMutableArray array];
-    [self MD_eachWithIndex:^(NSInteger index, id obj) {
+    [self AKO_eachWithIndex:^(NSInteger index, id obj) {
         [result addObject:obj];
         if (index >= array.count) return;
         [result addObject:array[index]];
@@ -137,10 +137,10 @@
     return result;
 }
 
-- (NSString *)MD_insertIntoPlaceHolderString:(NSString *)placeHolder {
+- (NSString *)AKO_insertIntoPlaceHolderString:(NSString *)placeHolder {
     NSArray *components = [placeHolder componentsSeparatedByString:@"%%"];
     if ([components count] < 2) return placeHolder;
-    return [[components MD_zip:self] MD_join:@""];
+    return [[components AKO_zip:self] AKO_join:@""];
 }
 
 @end

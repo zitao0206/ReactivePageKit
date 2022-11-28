@@ -10,12 +10,12 @@
 
 @implementation UIColor (Ext)
 
-+ (UIColor *)md_colorWithHexString:(NSString *)hexString
++ (UIColor *)ako_colorWithHexString:(NSString *)hexString
 {
-    return [UIColor md_colorWithHexString:hexString alpha:1.0];
+    return [UIColor ako_colorWithHexString:hexString alpha:1.0];
 }
 
-+ (UIColor *)md_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
++ (UIColor *)ako_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
 {
     NSString *cString = [[hexString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString]; //去掉前后空格换行符
     
@@ -59,15 +59,15 @@
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     
-    return [UIColor md_colorWithIntRed:r green:g blue:b alpha:alpha];
+    return [UIColor ako_colorWithIntRed:r green:g blue:b alpha:alpha];
 }
 
-+ (UIColor *)md_colorWithIntRed:(NSInteger)r green:(NSInteger)g blue:(NSInteger)b
++ (UIColor *)ako_colorWithIntRed:(NSInteger)r green:(NSInteger)g blue:(NSInteger)b
 {
-    return [UIColor md_colorWithIntRed:r green:g blue:b alpha:1.0];
+    return [UIColor ako_colorWithIntRed:r green:g blue:b alpha:1.0];
 }
 
-+ (UIColor *)md_colorWithIntRed:(NSInteger)r green:(NSInteger)g blue:(NSInteger)b alpha:(CGFloat)a
++ (UIColor *)ako_colorWithIntRed:(NSInteger)r green:(NSInteger)g blue:(NSInteger)b alpha:(CGFloat)a
 {
     return [UIColor colorWithRed:((CGFloat)r / 255.f) green:((CGFloat)g / 255.f) blue:((CGFloat)b / 255.f) alpha:a];
 }

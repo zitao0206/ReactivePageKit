@@ -1,10 +1,10 @@
 PODS:
-  - AKOCommonToolsKit (0.0.7)
+  - AKOCommonToolsKit (0.0.9)
   - EasyLayout (1.0.22)
   - ReactiveDataBoard (4.0.7):
     - ReactiveObjC
   - ReactiveObjC (3.1.1)
-  - ReactivePageKit (0.0.1):
+  - ReactivePageKit (1.0.13):
     - AKOCommonToolsKit
     - EasyLayout
     - ReactiveDataBoard
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AKOCommonToolsKit: 853f5fe5030abf74329c971c18228f597e13a5ea
+  AKOCommonToolsKit: 7d69a7a66c1f1a91df040bf03dfd6e0fcba011c7
   EasyLayout: 24623ce8ec65089f043c79d8c966a788817b2bb2
   ReactiveDataBoard: e2bc2305685ed66d496b5270a69165e090e47ed7
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  ReactivePageKit: eb31b727d413cb170afeafae14774511b43a8917
+  ReactivePageKit: 0bc5baf53ace9ce38fef9e27c15f9124c4643157
 
 PODFILE CHECKSUM: 670d66f05eecfa26f0bd9355399b6ee889987c44
 

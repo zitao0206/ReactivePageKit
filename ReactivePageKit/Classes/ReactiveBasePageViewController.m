@@ -6,7 +6,7 @@
 //
 
 #import "ReactiveBasePageViewController.h"
-#import <MDCommonKit/MDCommonKit.h>
+#import <AKOCommonToolsKit/AKOCommonToolsKit.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "ReactiveBaseModuleView.h"
 #import "ReactiveBaseModuleViewDelegate.h"
@@ -14,7 +14,7 @@
 @interface ReactiveBasePageViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *contentView;
-@property (nonatomic, strong) NSMutableArray <MDBaseModuleView *> *fixedViews;
+@property (nonatomic, strong) NSMutableArray <ReactiveBaseModuleView *> *fixedViews;
 @end
 
 @implementation ReactiveBasePageViewController
@@ -48,16 +48,16 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillAppear)]) {
                   [obj moduleWillAppear];
             }
         }
     }];
     //fixedViews：固定的模块处理
-    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillAppear)]) {
                 [obj moduleWillAppear];
             }
@@ -68,16 +68,16 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:YES];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleDidAppear)]) {
                 [obj moduleDidAppear];
             }
         }
     }];
     //fixedViews：固定的模块处理
-    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleDidAppear)]) {
                 [obj moduleDidAppear];
             }
@@ -88,16 +88,16 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillDisappear)]) {
                 [obj moduleWillDisappear];
             }
         }
     }];
     //fixedViews：固定的模块处理
-    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillDisappear)]) {
                 [obj moduleWillDisappear];
             }
@@ -144,8 +144,8 @@
 {
     NSMutableArray *_fixedViews = [[NSMutableArray alloc] init];
     for (NSString *obj in [self moduleViews]) {
-        __kindof MDBaseModuleView *objView = [[NSClassFromString(obj) alloc]initWithBoard:self.blackBoard];
-        if ([objView conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        __kindof ReactiveBaseModuleView *objView = [[NSClassFromString(obj) alloc]initWithBoard:self.blackBoard];
+        if ([objView conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([objView isModuleNeedFixed] ||
                 [objView isModuleNeedFixedToBottom] ||
                 [objView isModuleNeedFixedToTop]) {
@@ -167,14 +167,14 @@
 //加载所有ModuleView的子View
 - (void)loadContentModuleSubViews
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleSubViews];
         }
     }];
     //fixedViews：固定的模块处理
-    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleSubViews];
         }
     }];
@@ -191,8 +191,8 @@
 - (void)refreshModuleViewsWithIndex:(NSUInteger)index
 {
      if (index >= self.contentView.subviews.count) return;
-     __kindof MDBaseModuleView * obj = [self.contentView.subviews objectAtIndex:index];
-     if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+     __kindof ReactiveBaseModuleView * obj = [self.contentView.subviews objectAtIndex:index];
+     if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
         [obj loadModuleData:self.model];
         [obj layoutModuleWidth:[self screenWidth]];
         [self relayoutModuleViewsWithIndex:index];
@@ -203,19 +203,19 @@
 - (void)loadContentModulesData
 {
     @weakify(self);
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
         obj.moduleIndex = idx;
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleData:self.model];
         }
     }];
     [self bindAllSubViewsHeight];
     //fixedViews：固定的模块处理
-    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
         obj.moduleIndex = idx;
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleData:self.model];
         }
     }];
@@ -230,7 +230,7 @@
 - (void)bindAllSubViewsHeight
 {
     __block RACSignal *signal = [RACSubject subject];
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         RACSubject *s = obj.heightSignal;
         if (idx == 0) {
             signal = s;
@@ -252,7 +252,7 @@
     @weakify(self);
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj layoutModuleWidth:[self contentViewWidth]];
             obj.top = layoutOffestY;
             obj.left = ([self screenWidth] - [self contentViewWidth])/2;
@@ -267,7 +267,7 @@
     __block CGFloat fixedTopOffestY = 0.0;
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj layoutModuleWidth:[self contentViewWidth]];
             obj.left = ([self screenWidth] - [self contentViewWidth])/2;
             if ([obj isModuleNeedFixedToTop]) {
@@ -303,8 +303,8 @@
 
 - (void)disposeAllModuleViewsSignal
 {
-    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof MDBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj conformsToProtocol:@protocol(MDBaseModuleViewDelegate)]) {
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             RACSubject *s = obj.heightSignal;
             [s sendCompleted];
         }
