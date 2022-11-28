@@ -4,7 +4,7 @@ PODS:
   - ReactiveDataBoard (4.0.7):
     - ReactiveObjC
   - ReactiveObjC (3.1.1)
-  - ReactivePageKit (1.0.13):
+  - ReactivePageKit (1.0.14):
     - AKOCommonToolsKit
     - EasyLayout
     - ReactiveDataBoard
@@ -30,7 +30,7 @@ SPEC CHECKSUMS:
   EasyLayout: 24623ce8ec65089f043c79d8c966a788817b2bb2
   ReactiveDataBoard: e2bc2305685ed66d496b5270a69165e090e47ed7
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  ReactivePageKit: 0bc5baf53ace9ce38fef9e27c15f9124c4643157
+  ReactivePageKit: 95ce95469f8b941ae34fd271099f16aff537482d
 
 PODFILE CHECKSUM: 670d66f05eecfa26f0bd9355399b6ee889987c44
 
