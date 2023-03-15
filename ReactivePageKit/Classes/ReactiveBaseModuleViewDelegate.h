@@ -2,7 +2,7 @@
 //  ReactiveBaseModuleViewDelegate.h
 //  Pods
 //
-//  Created by leon0206 on 2018/2/1.
+//  Created by zitao0206 on 2018/2/1.
 //
 
 #ifndef ReactiveBaseModuleViewDelegate_h
@@ -12,25 +12,52 @@
 @class ReactiveBlackBoard;
 @protocol ReactiveBaseModuleViewDelegate <NSObject>
 @required
-//子类重写：加载模块的子View
+
+/**
+ * Subclass override, load the sub-view of the module
+ */
 - (void)loadModuleSubViews;
-//子类重写：分发模块的model
+
+/**
+ * Subclass override, model of distribution module
+ */
 - (void)loadModuleData:(id)model;
-//子类重写：布局模块
+
+/**
+ * Subclass override, layout module
+ */
 - (void)layoutModuleWidth:(CGFloat)width;
-//子类重写：是否需要固定，默认否，是的话添加到self.view上
+
+/**
+ * Subclass rewriting, whether to fix it, no by default, if yes, add it to self.view
+ */
 - (BOOL)isModuleNeedFixed;
-//子类重写：是否需要固定到底部，默认否，是的话添加到self.view底部
+
+/**
+ * Subclass rewriting, whether to fix to the bottom, no by default, if yes, add to the bottom of self.view
+ */
 - (BOOL)isModuleNeedFixedToBottom;
-//子类重写：是否需要固定到顶部，默认否，是的话添加到self.view顶部
+
+/**
+ * Subclass override, whether to fix it to the top, no by default, if yes, add it to the top of self.view
+ */
 - (BOOL)isModuleNeedFixedToTop;
 
 @optional
-//子类重写：模块WillAppear
+
+/**
+ * Subclass override, module's WillAppear
+ */
 - (void)moduleWillAppear;
-//子类重写：模块DidAppear
+
+/**
+ * Subclass override, module's moduleDidAppear
+ */
 - (void)moduleDidAppear;
-//子类重写：模块WillDisappear
+
+/**
+ * Subclass override, module's moduleWillDisappear
+ */
 - (void)moduleWillDisappear;
 @end
 

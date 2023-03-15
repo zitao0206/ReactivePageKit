@@ -4,18 +4,19 @@ sleep 2
 
 echo "-------Begin-------"
 if [ ! $1 ]; then
-    read -r -p "Please input your Video commit message: " input
+    read -p "Please input your Video commit message: " input
 else
     input=$1
 fi
 
 git add -A
-if [ $input ]; then
-    git commit -am $input
+if [ -n "$input" ]; then
+    git commit -m "$input"
 else
-    git commit -am "Auto Submission"
+    git commit -m "Script Submission"
 fi
-git push origin master
+
+git push -f origin main
 
 git fetch
 result=$(git tag --list)
@@ -44,11 +45,11 @@ for((k=0;k<100;k++)) do
     fi
 done;
 
-echo "The auto upgrade tag is: "$latestTag
+echo "Upgrade tag to："$latestTag
 git tag $latestTag
-git push -v origin refs/tags/$latestTag
+git push -v -f origin refs/tags/$latestTag
 sleep 3
-echo "Auto publish to MDSpecs."
+echo "Publish to MDSpecs"
 #./publishHelper.sh
 
 #获取podspec文件名称

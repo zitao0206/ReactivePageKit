@@ -3,7 +3,7 @@
 //  AKOCommonToolsKit
 //
 //  Created by Leon on 17/3/12.
-//  Copyright © 2017年 Leon0206. All rights reserved.
+//  Copyright © 2017年 zitao0206. All rights reserved.
 //
 
 #import "NSArray+functional.h"

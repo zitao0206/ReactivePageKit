@@ -2,7 +2,7 @@
 //  ReactiveBasePageView.m
 //  ReactivePageKit
 //
-//  Created by leon0206 on 2018/2/2.
+//  Created by zitao0206 on 2018/2/2.
 //
 
 #import "ReactiveBasePageView.h"
@@ -35,7 +35,7 @@
     }
 }
 
-/***须子类重写***/
+/***Must subclass override***/
 - (NSArray *)moduleViews
 {
     return @[];
@@ -64,7 +64,7 @@
     [self loadContentModuleViews];
 }
 
-//加载所有ModuleView
+//Load all ModuleViews
 - (void)loadContentModuleViews
 {
     for (NSString *obj in [self moduleViews]) {
@@ -73,7 +73,7 @@
     [self loadContentModuleSubViews];
 }
 
-//加载所有ModuleView的子View
+//Load child views of all ModuleViews
 - (void)loadContentModuleSubViews
 {
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -84,14 +84,14 @@
 }
 
 
-//刷新所有模块
+//Refresh all modules
 - (void)refreshAllModuleViews
 {
     [self loadContentModulesData];
     [self layoutModuleViews];
 }
 
-//分发数据并绑定height变化监测
+//Distribute data and bind height change monitoring
 - (void)loadContentModulesData
 {
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -121,7 +121,7 @@
     }];
 }
 
-//所有模块布局
+//Layout of all modules
 - (void)layoutModuleViews
 {
     __block CGFloat layoutOffestY = 0.0;
@@ -139,7 +139,7 @@
     self.scrollView.contentSize = CGSizeMake(self.width, layoutOffestY);
 }
 
-//指定模块的布局刷新
+//Specify the layout refresh of the module
 - (void)relayoutModuleViewsWithIndex:(NSUInteger)index
 {
     __block CGFloat layoutOffestY = [self.contentView.subviews objectAtIndex:index].bottom;
@@ -153,7 +153,7 @@
     self.scrollView.contentSize = CGSizeMake(self.width, layoutOffestY);
 }
 
-/***子类可重写***/
+/***Subclass rewritable***/
 - (CGFloat)spaceBetweenModuleViews
 {
     return 0.0;

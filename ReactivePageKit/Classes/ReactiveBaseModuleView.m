@@ -2,7 +2,7 @@
 //  ReactiveBaseModuleView.m
 //  ReactivePageKit
 //
-//  Created by leon0206 on 2018/2/1.
+//  Created by zitao0206 on 2018/2/1.
 //
 
 #import "ReactiveBaseModuleView.h"
@@ -51,32 +51,32 @@
     }];
 }
 
-/***须子类重写***/
+/***Must subclass override***/
 - (void)loadModuleSubViews
 {
 }
 
-/***须子类重写***/
+/***Must subclass override***/
 - (void)loadModuleData:(id)model
 {
 }
 
-/***须子类重写***/
+/***Must subclass override***/
 - (void)layoutModuleWidth:(CGFloat)width
 { 
 }
 
-/***子类重写***/
+/***Subclass override***/
 - (void)moduleWillAppear
 {
 }
 
-/***子类重写***/
+/***Subclass override***/
 - (void)moduleDidAppear
 {
 }
 
-/***子类重写***/
+/***Subclass override***/
 - (void)moduleWillDisappear
 {
 }

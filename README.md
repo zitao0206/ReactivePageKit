@@ -1,6 +1,6 @@
 # ReactivePageKit
 
-[![CI Status](https://img.shields.io/travis/leon0206/ReactivePageKit.svg?style=flat)](https://travis-ci.org/leon0206/ReactivePageKit)
+[![CI Status](https://img.shields.io/travis/zitao0206/ReactivePageKit.svg?style=flat)](https://travis-ci.org/zitao0206/ReactivePageKit)
 [![Version](https://img.shields.io/cocoapods/v/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
 [![License](https://img.shields.io/cocoapods/l/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
 [![Platform](https://img.shields.io/cocoapods/p/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
@@ -22,7 +22,7 @@ pod 'ReactivePageKit'
 
 ## Author
 
-leon0206, 634376133@qq.com
+zitao0206, 634376133@qq.com
 
 ## License
 

@@ -2,7 +2,7 @@
 //  ReactiveBasePageViewController.m
 //  ReactivePageKit
 //
-//  Created by leon0206 on 2018/2/1.
+//  Created by zitao0206 on 2018/2/1.
 //
 
 #import "ReactiveBasePageViewController.h"
@@ -55,7 +55,7 @@
             }
         }
     }];
-    //fixedViews：固定的模块处理
+    //fixedViews: fixed module processing
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillAppear)]) {
@@ -75,7 +75,7 @@
             }
         }
     }];
-    //fixedViews：固定的模块处理
+    //fixedViews: fixed module processing
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleDidAppear)]) {
@@ -95,7 +95,7 @@
             }
         }
     }];
-    //fixedViews：固定的模块处理
+    //fixedViews: fixed module processing
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             if ([obj respondsToSelector:@selector(moduleWillDisappear)]) {
@@ -139,7 +139,7 @@
     [self loadContentModuleViews];
 }
 
-//加载所有ModuleView
+//Load all ModuleViews
 - (void)loadContentModuleViews
 {
     NSMutableArray *_fixedViews = [[NSMutableArray alloc] init];
@@ -157,14 +157,14 @@
             }
         }
     }
-    //顺序倒过来
+    //Reverse the order
     if ([_fixedViews count] > 0) {
         [self.fixedViews addObjectsFromArray:[[_fixedViews reverseObjectEnumerator] allObjects]];
     }
     [self loadContentModuleSubViews];
 }
 
-//加载所有ModuleView的子View
+//Load child views of all ModuleViews
 - (void)loadContentModuleSubViews
 {
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -172,7 +172,7 @@
             [obj loadModuleSubViews];
         }
     }];
-    //fixedViews：固定的模块处理
+    //fixedViews: fixed module processing
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj conformsToProtocol:@protocol(ReactiveBaseModuleViewDelegate)]) {
             [obj loadModuleSubViews];
@@ -180,14 +180,14 @@
     }];
 }
 
-//刷新所有模块
+//Refresh all modules
 - (void)refreshAllModuleViews
 {
     [self loadContentModulesData];
     [self layoutModuleViews];
 }
 
-//刷新某一模块
+//Refresh a module
 - (void)refreshModuleViewsWithIndex:(NSUInteger)index
 {
      if (index >= self.contentView.subviews.count) return;
@@ -199,7 +199,7 @@
     }
 }
 
-//分发数据并绑定height变化监测
+//Distribute data and bind height change monitoring
 - (void)loadContentModulesData
 {
     @weakify(self);
@@ -211,7 +211,7 @@
         }
     }];
     [self bindAllSubViewsHeight];
-    //fixedViews：固定的模块处理
+    //FixedViews: fixed module processing
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof ReactiveBaseModuleView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         @strongify(self);
         obj.moduleIndex = idx;
@@ -221,7 +221,7 @@
     }];
 }
 
-/***须子类重写***/
+/***Must subclass override***/
 - (NSArray *)moduleViews
 {
     return @[];
@@ -245,7 +245,7 @@
     }];
 }
 
-//所有模块布局
+//Layout of all modules
 - (void)layoutModuleViews
 {
     __block CGFloat layoutOffestY = 0.0;
@@ -262,7 +262,7 @@
     self.contentView.frame = CGRectMake(0, 0, self.view.width, layoutOffestY);
     self.scrollView.contentSize = CGSizeMake(self.view.width, layoutOffestY);
     
-    //fixedViews：固定的模块处理
+    //fixedViews: fixed module processing
     __block CGFloat fixedBottomOffestY = 0.0;
     __block CGFloat fixedTopOffestY = 0.0;
     [self.fixedViews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -280,7 +280,7 @@
             }
         }
     }];
-    //内容展示到吸底的模块区域
+    //The content is displayed in the module area of the bottom suction
     self.scrollView.height = [self screenHeight] - fixedBottomOffestY - fixedTopOffestY;
     self.scrollView.top = fixedTopOffestY;
 }
@@ -311,25 +311,25 @@
     }];
 }
 
-/***子类可重写***/
+/***Subclass rewritable***/
 - (BOOL)scrollEnabled
 {
     return YES;
 }
 
-/***子类可重写***/
+/***Subclass rewritable***/
 - (BOOL)bouncesEnabled
 {
     return NO;
 }
 
-/***子类可重写***/
+/***Subclass rewritable***/
 - (BOOL)alwaysBounceVertical
 {
     return NO;
 }
 
-/***子类可重写***/
+/***Subclass rewritable***/
 - (CGFloat)spaceBetweenModuleViews
 {
     return 0.0;

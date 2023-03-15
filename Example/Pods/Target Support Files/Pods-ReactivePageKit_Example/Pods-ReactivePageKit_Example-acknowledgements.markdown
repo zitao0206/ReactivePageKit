@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ## EasyLayout
 
-Copyright (c) 2019 leon0206 <634376133@qq.com>
+Copyright (c) 2019 zitao0206 <634376133@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -49,7 +49,7 @@ THE SOFTWARE.
 
 ## ReactiveDataBoard
 
-Copyright (c) 2019 leon0206 <zitao.li@quvideo.com>
+Copyright (c) 2019 zitao0206 <zitao.li@quvideo.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -95,7 +95,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## ReactivePageKit
 
-Copyright (c) 2022 leon0206 <634376133@qq.com>
+Copyright (c) 2022 zitao0206 <634376133@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
