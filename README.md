@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
 [![Platform](https://img.shields.io/cocoapods/p/ReactivePageKit.svg?style=flat)](https://cocoapods.org/pods/ReactivePageKit)
 
+## Description:
+
+It is a template-based page-building solution that allows for the quick creation of content detail pages by following a few simple rules. It provides module lifecycle management, unified data distribution, and page layout operations, effectively avoiding the bloat and confusion of traditional MVC patterns. Pages built with it are easy to maintain and develop, making it a valuable tool for business operations.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
